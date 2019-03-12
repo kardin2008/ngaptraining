@@ -1,0 +1,38 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id=""></p>
+        <script>
+           var a = 42;
+
+           (function iifee(){
+               var a = 10;
+               console.log(a);
+           }())
+           console.log(a);
+
+           function test(a,b){
+               console.log(a+b);
+               console.log(arguments);
+           }
+           test(5,4);
+
+           function add(a){
+               var b = a;
+               return a+b;
+           }
+           var c = add(22);
+           console.log(c);
+
+           function scope(b){
+               console.log(a+b);
+              // var a = 33;
+           }
+           //var e = 23;
+           scope (20);
+           
+
+        </script>
+    </body>
+</html>

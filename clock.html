@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="clock"></p>
+        <script>
+            function Clock(){
+                var d = new Date();
+                var e = d.toLocaleTimeString();
+                console.log(e);
+                document.getElementById('clock').innerHTML = e
+
+            }
+            setInterval(Clock,1000);
+        </script>
+    </body>
+</html>

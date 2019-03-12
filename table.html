@@ -1,0 +1,34 @@
+<html>
+    <head>
+    </head>
+    <style>
+        table, th, td {
+         border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>    
+    <body>
+        <table id="table"></table>
+        <script>
+           var table = document.createElement('table');
+            for (var i = 1; i <= 10; i++){
+                var tr = document.createElement('tr');   
+             //   table.appendChild(tr);
+                for (var j = 1; j <= 10; j++){
+
+                var td1 = document.createElement('td');
+             //   td1.setAttribute("id",(i-1)*10+j)
+                var text1 = document.createTextNode((i-1)*10+j)
+                
+            //    var z = td1.setAttribute("test,i);
+
+                td1.appendChild(text1);
+                tr.appendChild(td1);
+               
+                table.appendChild(tr);
+             }
+            }
+            document.body.appendChild(table);
+        </script>
+    </body>
+</html>
